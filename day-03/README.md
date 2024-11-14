@@ -1,0 +1,1 @@
+Deployments e estratégias de rollout

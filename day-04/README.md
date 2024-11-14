@@ -1,0 +1,1 @@
+ReplicaSets, DeamonSets e Probes

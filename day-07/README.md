@@ -85,9 +85,6 @@ O **StatefulSet** é, portanto, uma solução poderosa no Kubernetes para gerenc
 
 ---
 
-Claro! Aqui está uma explicação sobre **Headless Service** no Kubernetes em formato Markdown:
-
----
 
 # Headless Service no Kubernetes
 
@@ -165,7 +162,7 @@ No Kubernetes, os **Services** são recursos que expõem aplicações em execuç
 
 ## 1. ClusterIP
 
-- **Descrição**: É o tipo de Service padrão. Exponibiliza o serviço dentro do cluster com um endereço IP virtual acessível apenas por outros Pods e componentes dentro do próprio cluster.
+- **Descrição**: É o tipo de Service padrão. Disponibiliza o serviço dentro do cluster com um endereço IP virtual acessível apenas por outros Pods e componentes dentro do próprio cluster.
 - **Uso**: Ideal para comunicação interna entre Pods ou quando queremos encapsular a comunicação interna sem exposição externa.
 - **Exemplo**:
 
@@ -186,7 +183,7 @@ No Kubernetes, os **Services** são recursos que expõem aplicações em execuç
 
 ## 2. NodePort
 
-- **Descrição**: Exponibiliza o serviço para fora do cluster usando uma porta específica em cada nó do cluster. O Kubernetes aloca uma porta entre 30000 e 32767 que é mapeada para o `ClusterIP`.
+- **Descrição**: Disponibiliza o serviço para fora do cluster usando uma porta específica em cada nó do cluster. O Kubernetes aloca uma porta entre 30000 e 32767 que é mapeada para o `ClusterIP`.
 - **Uso**: Útil para testes simples ou para expor uma aplicação sem configurar um load balancer externo, mas não é ideal para produção devido às limitações de escalabilidade.
 - **Exemplo**:
 
